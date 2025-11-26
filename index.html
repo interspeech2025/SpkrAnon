@@ -5,6 +5,25 @@
     <link rel="shortcut icon" href="https://vancycici.github.io/fbdecode/img/ms.jpg">
     <link rel="icon" href="https://vancycici.github.io/fbdecode/img/ms.jpg">
     <link rel="apple-touch-icon" href="https://vancycici.github.io/fbdecode/img/ms.jpg">
+    <style>
+        /* 可选：简单美化表格，提升可读性 */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        audio {
+            width: 180px;
+        }
+    </style>
 </head>
 <body>
 
@@ -14,250 +33,181 @@
     </header>
 </article>
 
-
 <div>
     <b>Abstract:</b>  Voice anonymization has emerged as a crucial technique for protecting speaker privacy in the era of advancing speech technologies. While existing methods for pseudo-speaker generation have shown promise, they often face challenges in computational efficiency and speaker distinctiveness. This paper presents U2SAnon, a novel approach to voice anonymization that addresses these limitations through efficient pseudo-speaker generation. Unlike conventional methods that operate directly in the speaker vector space or rely on reference pools, our proposed method samples pseudo-speaker identities from a uniform vector space and maps them to the speaker vector space. This approach significantly reduces computational complexity by eliminating the need for iterative sampling or distribution estimation while maintaining speaker distinctiveness. U2SAnon consists of two key components: a uniform identity vector sampler and a mapper that transforms vectors from the uniform space to the pseudo-speaker vector space. The system preserves the original speech's linguistic content and prosody while effectively anonymizing speaker identity. Experimental results on the LibriSpeech dataset demonstrate the effectiveness of our proposed approach in terms of both computational efficiency and anonymization performance.
 </div>
 
 <br/>
-<br/>
-<br/>
+<h3>Anonymized Speech Samples (Methods: A, B, C, D, E, F, G)</h3>
+<p>Each method folder contains audio files named as <code>Method_XX.wav</code> (XX from 01 to 15)</p>
 
-Here, we showcase four kinds of anonymized speech:
-(1)USPAnon
-(2)PSD;
-(3)RS;
-(4)Farthest;
-
-<h2>Libri-Dev Male</h2>
 <table>
     <thead>
         <tr>
-            <th>Audio Name</th>
-            <th>USPAnon</th>
-            <th>PSD</th>
-            <th>RS</th>
-            <th>Farthest</th>
+            <th>Audio Index</th>
+            <th>Method A</th>
+            <th>Method B</th>
+            <th>Method C</th>
+            <th>Method D</th>
+            <th>Method E</th>
+            <th>Method F</th>
+            <th>Method G</th>
         </tr>
     </thead>
     <tbody>
-        <!-- 第一行 -->
+        <!-- 生成01到15的音频行 -->
         <tr>
-            <td>174-50561-0000</td> <!-- 音频名称 -->
-            <td>
-                <audio controls="">
-                    <source src="U2SAnon/libri-dev/male/174-50561-0000.wav">
-                </audio>
-            </td>
-            <td>
-                <audio controls="">
-                    <source src="psd/libri-dev/male/174-50561-0000.wav">
-                </audio>
-            </td>
-            <td>
-                <audio controls="">
-                    <source src="RS/libri-dev/male/174-50561-0000.wav">
-                </audio>
-            </td>
-            <td>
-                <audio controls="">
-                    <source src="Farthest/libri-dev/male/174-50561-0000.wav">
-                </audio>
-            </td>
+            <td>01</td>
+            <td><audio controls><source src="A/A_01.wav"></audio></td>
+            <td><audio controls><source src="B/B_01.wav"></audio></td>
+            <td><audio controls><source src="C/C_01.wav"></audio></td>
+            <td><audio controls><source src="D/D_01.wav"></audio></td>
+            <td><audio controls><source src="E/E_01.wav"></audio></td>
+            <td><audio controls><source src="F/F_01.wav"></audio></td>
+            <td><audio controls><source src="G/G_01.wav"></audio></td>
         </tr>
-        <!-- 第二行 -->
         <tr>
-            <td>251-136532-0000</td> <!-- 音频名称 -->
-            <td>
-                <audio controls="">
-                    <source src="U2SAnon/libri-dev/male/251-136532-0000.wav">
-                </audio>
-            </td>
-            <td>
-                <audio controls="">
-                    <source src="psd/libri-dev/male/251-136532-0000.wav">
-                </audio>
-            </td>
-            <td>
-                <audio controls="">
-                    <source src="RS/libri-dev/male/251-136532-0000.wav">
-                </audio>
-            </td>
-            <td>
-                <audio controls="">
-                    <source src="Farthest/libri-dev/male/251-136532-0000.wav">
-                </audio>
-            </td>
+            <td>02</td>
+            <td><audio controls><source src="A/A_02.wav"></audio></td>
+            <td><audio controls><source src="B/B_02.wav"></audio></td>
+            <td><audio controls><source src="C/C_02.wav"></audio></td>
+            <td><audio controls><source src="D/D_02.wav"></audio></td>
+            <td><audio controls><source src="E/E_02.wav"></audio></td>
+            <td><audio controls><source src="F/F_02.wav"></audio></td>
+            <td><audio controls><source src="G/G_02.wav"></audio></td>
         </tr>
-        <!-- 第三行 -->
         <tr>
-            <td>174-50561-0001</td> <!-- 音频名称 -->
-            <td>
-                <audio controls="">
-                    <source src="U2SAnon/libri-dev/male/174-50561-0001.wav">
-                </audio>
-            </td>
-            <td>
-                <audio controls="">
-                    <source src="psd/libri-dev/male/174-50561-0001.wav">
-                </audio>
-            </td>
-            <td>
-                <audio controls="">
-                    <source src="RS/libri-dev/male/174-50561-0001.wav">
-                </audio>
-            </td>
-            <td>
-                <audio controls="">
-                    <source src="Farthest/libri-dev/male/174-50561-0001.wav">
-                </audio>
-            </td>
+            <td>03</td>
+            <td><audio controls><source src="A/A_03.wav"></audio></td>
+            <td><audio controls><source src="B/B_03.wav"></audio></td>
+            <td><audio controls><source src="C/C_03.wav"></audio></td>
+            <td><audio controls><source src="D/D_03.wav"></audio></td>
+            <td><audio controls><source src="E/E_03.wav"></audio></td>
+            <td><audio controls><source src="F/F_03.wav"></audio></td>
+            <td><audio controls><source src="G/G_03.wav"></audio></td>
         </tr>
-
-        <!-- 第四行 -->
         <tr>
-            <td>251-136532-0001</td> <!-- 音频名称 -->
-            <td>
-                <audio controls="">
-                    <source src="U2SAnon/libri-dev/male/251-136532-0001.wav">
-                </audio>
-            </td>
-            <td>
-                <audio controls="">
-                    <source src="psd/libri-dev/male/251-136532-0001.wav">
-                </audio>
-            </td>
-            <td>
-                <audio controls="">
-                    <source src="RS/libri-dev/male/251-136532-0001.wav">
-                </audio>
-            </td>
-            <td>
-                <audio controls="">
-                    <source src="Farthest/libri-dev/male/251-136532-0001.wav">
-                </audio>
-            </td>
+            <td>04</td>
+            <td><audio controls><source src="A/A_04.wav"></audio></td>
+            <td><audio controls><source src="B/B_04.wav"></audio></td>
+            <td><audio controls><source src="C/C_04.wav"></audio></td>
+            <td><audio controls><source src="D/D_04.wav"></audio></td>
+            <td><audio controls><source src="E/E_04.wav"></audio></td>
+            <td><audio controls><source src="F/F_04.wav"></audio></td>
+            <td><audio controls><source src="G/G_04.wav"></audio></td>
+        </tr>
+        <tr>
+            <td>05</td>
+            <td><audio controls><source src="A/A_05.wav"></audio></td>
+            <td><audio controls><source src="B/B_05.wav"></audio></td>
+            <td><audio controls><source src="C/C_05.wav"></audio></td>
+            <td><audio controls><source src="D/D_05.wav"></audio></td>
+            <td><audio controls><source src="E/E_05.wav"></audio></td>
+            <td><audio controls><source src="F/F_05.wav"></audio></td>
+            <td><audio controls><source src="G/G_05.wav"></audio></td>
+        </tr>
+        <tr>
+            <td>06</td>
+            <td><audio controls><source src="A/A_06.wav"></audio></td>
+            <td><audio controls><source src="B/B_06.wav"></audio></td>
+            <td><audio controls><source src="C/C_06.wav"></audio></td>
+            <td><audio controls><source src="D/D_06.wav"></audio></td>
+            <td><audio controls><source src="E/E_06.wav"></audio></td>
+            <td><audio controls><source src="F/F_06.wav"></audio></td>
+            <td><audio controls><source src="G/G_06.wav"></audio></td>
+        </tr>
+        <tr>
+            <td>07</td>
+            <td><audio controls><source src="A/A_07.wav"></audio></td>
+            <td><audio controls><source src="B/B_07.wav"></audio></td>
+            <td><audio controls><source src="C/C_07.wav"></audio></td>
+            <td><audio controls><source src="D/D_07.wav"></audio></td>
+            <td><audio controls><source src="E/E_07.wav"></audio></td>
+            <td><audio controls><source src="F/F_07.wav"></audio></td>
+            <td><audio controls><source src="G/G_07.wav"></audio></td>
+        </tr>
+        <tr>
+            <td>08</td>
+            <td><audio controls><source src="A/A_08.wav"></audio></td>
+            <td><audio controls><source src="B/B_08.wav"></audio></td>
+            <td><audio controls><source src="C/C_08.wav"></audio></td>
+            <td><audio controls><source src="D/D_08.wav"></audio></td>
+            <td><audio controls><source src="E/E_08.wav"></audio></td>
+            <td><audio controls><source src="F/F_08.wav"></audio></td>
+            <td><audio controls><source src="G/G_08.wav"></audio></td>
+        </tr>
+        <tr>
+            <td>09</td>
+            <td><audio controls><source src="A/A_09.wav"></audio></td>
+            <td><audio controls><source src="B/B_09.wav"></audio></td>
+            <td><audio controls><source src="C/C_09.wav"></audio></td>
+            <td><audio controls><source src="D/D_09.wav"></audio></td>
+            <td><audio controls><source src="E/E_09.wav"></audio></td>
+            <td><audio controls><source src="F/F_09.wav"></audio></td>
+            <td><audio controls><source src="G/G_09.wav"></audio></td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td><audio controls><source src="A/A_10.wav"></audio></td>
+            <td><audio controls><source src="B/B_10.wav"></audio></td>
+            <td><audio controls><source src="C/C_10.wav"></audio></td>
+            <td><audio controls><source src="D/D_10.wav"></audio></td>
+            <td><audio controls><source src="E/E_10.wav"></audio></td>
+            <td><audio controls><source src="F/F_10.wav"></audio></td>
+            <td><audio controls><source src="G/G_10.wav"></audio></td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td><audio controls><source src="A/A_11.wav"></audio></td>
+            <td><audio controls><source src="B/B_11.wav"></audio></td>
+            <td><audio controls><source src="C/C_11.wav"></audio></td>
+            <td><audio controls><source src="D/D_11.wav"></audio></td>
+            <td><audio controls><source src="E/E_11.wav"></audio></td>
+            <td><audio controls><source src="F/F_11.wav"></audio></td>
+            <td><audio controls><source src="G/G_11.wav"></audio></td>
+        </tr>
+        <tr>
+            <td>12</td>
+            <td><audio controls><source src="A/A_12.wav"></audio></td>
+            <td><audio controls><source src="B/B_12.wav"></audio></td>
+            <td><audio controls><source src="C/C_12.wav"></audio></td>
+            <td><audio controls><source src="D/D_12.wav"></audio></td>
+            <td><audio controls><source src="E/E_12.wav"></audio></td>
+            <td><audio controls><source src="F/F_12.wav"></audio></td>
+            <td><audio controls><source src="G/G_12.wav"></audio></td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td><audio controls><source src="A/A_13.wav"></audio></td>
+            <td><audio controls><source src="B/B_13.wav"></audio></td>
+            <td><audio controls><source src="C/C_13.wav"></audio></td>
+            <td><audio controls><source src="D/D_13.wav"></audio></td>
+            <td><audio controls><source src="E/E_13.wav"></audio></td>
+            <td><audio controls><source src="F/F_13.wav"></audio></td>
+            <td><audio controls><source src="G/G_13.wav"></audio></td>
+        </tr>
+        <tr>
+            <td>14</td>
+            <td><audio controls><source src="A/A_14.wav"></audio></td>
+            <td><audio controls><source src="B/B_14.wav"></audio></td>
+            <td><audio controls><source src="C/C_14.wav"></audio></td>
+            <td><audio controls><source src="D/D_14.wav"></audio></td>
+            <td><audio controls><source src="E/E_14.wav"></audio></td>
+            <td><audio controls><source src="F/F_14.wav"></audio></td>
+            <td><audio controls><source src="G/G_14.wav"></audio></td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td><audio controls><source src="A/A_15.wav"></audio></td>
+            <td><audio controls><source src="B/B_15.wav"></audio></td>
+            <td><audio controls><source src="C/C_15.wav"></audio></td>
+            <td><audio controls><source src="D/D_15.wav"></audio></td>
+            <td><audio controls><source src="E/E_15.wav"></audio></td>
+            <td><audio controls><source src="F/F_15.wav"></audio></td>
+            <td><audio controls><source src="G/G_15.wav"></audio></td>
         </tr>
     </tbody>
 </table>
-
-<h2>Libri-Dev Female</h2>
-<table>
-    <thead>
-        <tr>
-            <th>Audio Name</th>
-            <th>USPAnon</th>
-            <th>PSD</th>
-            <th>RS</th>
-            <th>Farthest</th>
-        </tr>
-    </thead>
-    <tbody>
-        <!-- 第一行 -->
-        <tr>
-            <td>1462-170142-0000</td> <!-- 音频名称 -->
-            <td>
-                <audio controls="">
-                    <source src="U2SAnon/libri-dev/female/1462-170142-0000.wav">
-                </audio>
-            </td>
-            <td>
-                <audio controls="">
-                    <source src="psd/libri-dev/female/1462-170142-0000.wav">
-                </audio>
-            </td>
-            <td>
-                <audio controls="">
-                    <source src="RS/libri-dev/female/1462-170142-0000.wav">
-                </audio>
-            </td>
-            <td>
-                <audio controls="">
-                    <source src="Farthest/libri-dev/female/1462-170142-0000.wav">
-                </audio>
-            </td>
-        </tr>
-        <!-- 第二行 -->
-        <tr>
-            <td>84-121550-0000</td> <!-- 音频名称 -->
-            <td>
-                <audio controls="">
-                    <source src="U2SAnon/libri-dev/female/84-121550-0000.wav">
-                </audio>
-            </td>
-            <td>
-                <audio controls="">
-                    <source src="psd/libri-dev/female/84-121550-0000.wav">
-                </audio>
-            </td>
-            <td>
-                <audio controls="">
-                    <source src="RS/libri-dev/male/84-121550-0000.wav">
-                </audio>
-            </td>
-            <td>
-                <audio controls="">
-                    <source src="Farthest/libri-dev/female/84-121550-0000.wav">
-                </audio>
-            </td>
-        </tr>
-
-        <!-- 第三行 -->
-        <tr>
-            <td>1462-170142-0001</td> <!-- 音频名称 -->
-            <td>
-                <audio controls="">
-                    <source src="U2SAnon/libri-dev/female/1462-170142-0001.wav">
-                </audio>
-            </td>
-            <td>
-                <audio controls="">
-                    <source src="psd/libri-dev/female/1462-170142-0001.wav">
-                </audio>
-            </td>
-            <td>
-                <audio controls="">
-                    <source src="Farthest/libri-dev/female/1462-170142-0001.wav">
-                </audio>
-            </td>
-            <td>
-                <audio controls="">
-                    <source src="Farthest/libri-dev/female/1462-170142-0001.wav">
-                </audio>
-            </td>
-        </tr>
-
-        <!-- 第四行 -->
-        <tr>
-            <td>84-121550-0001</td> <!-- 音频名称 -->
-            <td>
-                <audio controls="">
-                    <source src="U2SAnon/libri-dev/female/84-121550-0001.wav">
-                </audio>
-            </td>
-            <td>
-                <audio controls="">
-                    <source src="psd/libri-dev/female/84-121550-0001.wav">
-                </audio>
-            </td>
-            <td>
-                <audio controls="">
-                    <source src="RS/libri-dev/female/84-121550-0001.wav">
-                </audio>
-            </td>
-            <td>
-                <audio controls="">
-                    <source src="Farthest/libri-dev/female/84-121550-0001.wav">
-                </audio>
-            </td>
-        </tr>
-        
-    </tbody>
-</table>
-
-
-<!-- Repeat the same structure for other sections (Libri-Dev Female, Libri-Test Male, and Libri-Test Female) -->
-<!-- Make sure to add the 'Farthest' column and the corresponding audio sources in each section. -->
 
 </body>
 </html>
